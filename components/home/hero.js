@@ -19,6 +19,11 @@ export default function Hero() {
           <Link href="/projects">
             <a className="btn-project">프로젝트 보러가기</a>
           </Link>
+          <Link href="https://excellent-plane-237.notion.site/1771ac6d287445ab99afee52feaf54dd">
+            <a className="btn-project" target="_blank">
+              노션 이력서 바로가기
+            </a>
+          </Link>
         </div>
       </div>
       <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
