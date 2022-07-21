@@ -17,7 +17,9 @@ export default function Header() {
             <Link href="/projects">
               <a className="mr-5 hover:text-gray-900">프로젝트</a>
             </Link>
-            <a className="mr-5 hover:text-gray-900">Contact</a>
+            <a href="https://excellent-plane-237.notion.site/1771ac6d287445ab99afee52feaf54dd" target="blank" className="mr-5 hover:text-gray-900">
+              About Me
+            </a>
           </nav>
           <DatkModeToggleBtn />
         </div>

@@ -24,7 +24,7 @@ const ProjectItem = ({ projectData }) => {
           깃허브 바로가기
         </a>
         <a href={notionLink} target="blank">
-          노션 바로가기
+          {notionLink && '노션 바로가기'}
         </a>
         <a href={publishURL} target="blank">
           {publishURL && '배포 링크 바로가기'}
