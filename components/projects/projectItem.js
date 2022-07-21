@@ -32,7 +32,7 @@ const ProjectItem = ({ projectData }) => {
         <a href={youtubeURL} target="blank">
           {youtubeURL && '유튜브 시연영상 보러가기'}
         </a>
-        <div className="my-1">
+        <div className="flex flex-wrap my-1">
           {tag.map((tagData) => {
             const tagColor = tagData.color;
             console.log(tagColor);
