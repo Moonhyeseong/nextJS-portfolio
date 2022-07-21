@@ -6,17 +6,21 @@ import ProjectItem from '../components/projects/projectItem';
 const Projects = ({ projects }) => {
   console.log(projects);
   return (
-    <Layout className="flex flex-col items-center justify-center ">
-      <Head>
-        <title>프론트엔드 개발자 문혜성 | 프로젝트</title>
-        <meta name="description" content="프론트엔드 개발자 문혜성 포트폴리오" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <h1 className="text-4xl font-bold sm:text-6xl">총 프로젝트 : {projects.results.length}</h1>
-      <div className="grid grid-cols-1  p-6 md:grid-cols-2 gap-8  py-10  w-3/5 sm:w-full ">
-        {projects.results.map((project) => {
-          return <ProjectItem key={project.id} projectData={project} />;
-        })}
+    <Layout>
+      <div className="flex flex-col items-center justify-center min-h-screen">
+        <Head>
+          <title>프론트엔드 개발자 문혜성 | 프로젝트</title>
+          <meta name="description" content="프론트엔드 개발자 문혜성 포트폴리오" />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+        <h1 className="text-4xl font-bold sm:text-6xl">
+          총 프로젝트 : <span className="text-sky-600">{projects.results.length}</span>
+        </h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 p-12 gap-10">
+          {projects.results.map((project) => {
+            return <ProjectItem key={project.id} projectData={project} />;
+          })}
+        </div>
       </div>
     </Layout>
   );

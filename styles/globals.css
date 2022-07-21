@@ -10,6 +10,19 @@
   @apply inline-flex mr-4 text-white dark:text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg;
 }
 
+.project-card {
+  @apply flex flex-col  rounded-xl 
+          transition duration-300 transform border border-gray-300
+          hover:scale-105 
+          hover:shadow-lg
+          dark:border-gray-200/50
+          dark:hover:shadow-gray-400/40;
+}
+
+.tag {
+  @apply bg-slate-500 rounded-lg  mr-2 p-1 px-2 text-white;
+}
+
 h1,
 h2,
 h3,
