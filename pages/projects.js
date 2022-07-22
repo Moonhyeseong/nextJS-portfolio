@@ -4,7 +4,6 @@ import { TOKEN, DATABASE_ID } from '../config';
 import ProjectItem from '../components/projects/projectItem';
 
 const Projects = ({ projects }) => {
-  console.log(projects);
   return (
     <Layout>
       <div className="flex flex-col items-center justify-center min-h-screen">
@@ -51,8 +50,6 @@ export async function getStaticProps() {
 
   const res = await fetch(`https://api.notion.com/v1/databases/${DATABASE_ID}/query`, options);
   const projects = await res.json();
-
-  console.log(projects.results[0].properties);
 
   return {
     props: { projects },

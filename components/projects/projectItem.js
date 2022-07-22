@@ -11,8 +11,6 @@ const ProjectItem = ({ projectData }) => {
   const Workperiod = projectData.properties.Workperiod.rich_text[0].plain_text;
   const imgScr = projectData.cover.file.url;
 
-  console.log('publishURL', publishURL);
-
   return (
     <div className="project-card">
       <Image className="rounded-t-xl bg-white" src={imgScr} width="100%" height="60%" layout="responsive" objectFit="contain" quality="100" alt="cover_image" />
@@ -34,8 +32,6 @@ const ProjectItem = ({ projectData }) => {
         </a>
         <div className="flex flex-wrap my-1">
           {tag.map((tagData) => {
-            const tagColor = tagData.color;
-            console.log(tagColor);
             return (
               <span className="tag" key={tagData.id}>
                 {tagData.name}
